@@ -1,6 +1,6 @@
 /**
  * Namevya Main JavaScript
- * Handles navigation toggling, search input handling, local database lookups, and result page rendering.
+ * Handles navigation toggling, search input handling, local database lookups, Gemini API fallback, and result page rendering.
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -92,7 +92,7 @@ async function initResultPage() {
     return;
   }
 
-  // Show loading indicator
+  // Show loading indicator for local search
   resultContainer.innerHTML = `
     <div class="result-loading">
       <div class="spinner"></div>
@@ -100,32 +100,50 @@ async function initResultPage() {
     </div>
   `;
 
+  // Step 1: Check local database first
   try {
     const response = await fetch('data/names.json');
-    if (!response.ok) {
-      throw new Error(`Failed to load database: ${response.status}`);
-    }
-    const namesData = await response.json();
+    if (response.ok) {
+      const namesData = await response.json();
+      const matchedEntry = findNameEntry(namesData, cleanQuery);
 
-    // Find match by exact name (case-insensitive, trimmed) or alternative spellings
-    const matchedEntry = findNameEntry(namesData, cleanQuery);
-
-    if (matchedEntry) {
-      document.title = `${matchedEntry.name} - Meaning & Origin | Namevya`;
-      renderNameDetails(resultContainer, matchedEntry, rawQuery);
-    } else {
-      document.title = `Name Not Found - Namevya`;
-      renderNotFoundState(resultContainer, rawQuery);
+      if (matchedEntry) {
+        document.title = `${matchedEntry.name} - Meaning & Origin | Namevya`;
+        renderNameDetails(resultContainer, matchedEntry, rawQuery);
+        return;
+      }
     }
   } catch (error) {
-    console.error('Error fetching names database:', error);
-    resultContainer.innerHTML = `
-      <div class="card error-card">
-        <h2>Unable to load name database</h2>
-        <p>Sorry, an unexpected error occurred while loading the name details. Please try again later.</p>
-        <a href="index.html" class="btn btn-primary" style="margin-top: 1rem;">Back to Homepage</a>
-      </div>
-    `;
+    console.warn('Local database lookup failed, proceeding to API search fallback:', error);
+  }
+
+  // Step 2: Name not in local database -> Call Gemini AI API fallback via /api/search
+  resultContainer.innerHTML = `
+    <div class="result-loading">
+      <div class="spinner"></div>
+      <p>Generating AI name insight for "${escapeHTML(rawQuery)}"...</p>
+    </div>
+  `;
+
+  try {
+    const apiResponse = await fetch(`/api/search?name=${encodeURIComponent(rawQuery)}`);
+    const data = await apiResponse.json();
+
+    if (apiResponse.status === 200 && data && !data.notFound) {
+      document.title = `${data.name} - Meaning & Origin | Namevya`;
+      renderNameDetails(resultContainer, data, rawQuery);
+    } else if (apiResponse.status === 404 || (data && data.notFound)) {
+      document.title = `Name Not Found - Namevya`;
+      renderNotFoundState(resultContainer, rawQuery);
+    } else {
+      console.error('API Search Error Response:', apiResponse.status, data);
+      document.title = `Search Error - Namevya`;
+      renderErrorState(resultContainer, data?.error || `Server error (${apiResponse.status})`);
+    }
+  } catch (apiError) {
+    console.error('API search request failed:', apiError);
+    document.title = `Search Error - Namevya`;
+    renderErrorState(resultContainer, 'Unable to connect to search service. Please check your internet connection and try again.');
   }
 }
 
@@ -171,6 +189,10 @@ function renderNameDetails(container, item, searchedQuery) {
     ? item.alternativeSpellings.map(alt => `<span class="alt-spelling-pill">${escapeHTML(alt)}</span>`).join('')
     : '<span class="text-muted">None listed</span>';
 
+  const aiBadgeHTML = item.isAiGenerated
+    ? '<span class="meta-tag" style="background-color: #f3e8ff; color: #6b21a8; border: 1px solid #d8b4fe;">✨ AI Generated Insight</span>'
+    : '';
+
   container.innerHTML = `
     <article class="card result-card">
       <div class="result-header">
@@ -180,6 +202,7 @@ function renderNameDetails(container, item, searchedQuery) {
             <span class="gender-tag ${genderClass}">${escapeHTML(formattedGender)}</span>
             <span class="meta-tag origin-tag-pill">Origin: ${escapeHTML(item.origin || 'N/A')}</span>
             <span class="meta-tag language-tag-pill">Language: ${escapeHTML(item.language || 'N/A')}</span>
+            ${aiBadgeHTML}
           </div>
         </div>
       </div>
@@ -238,7 +261,7 @@ function renderNotFoundState(container, searchedQuery) {
       <div class="not-found-icon">🔍</div>
       <h1 class="not-found-title">Name Not Found</h1>
       <p class="not-found-message">
-        We couldn't find <strong>"${escapeHTML(searchedQuery)}"</strong> in our database yet.
+        We couldn't find <strong>"${escapeHTML(searchedQuery)}"</strong> in our database or via search.
       </p>
       <p class="not-found-subtext">
         Double check the spelling or try searching for another name like <strong>"Aisha"</strong>, <strong>"Muhammad"</strong>, or <strong>"Aarav"</strong>.
@@ -246,6 +269,21 @@ function renderNotFoundState(container, searchedQuery) {
       <div class="not-found-actions">
         <a href="index.html" class="btn btn-primary">&larr; Back to Search</a>
       </div>
+    </div>
+  `;
+}
+
+/**
+ * Renders state when API search encounters an error
+ * @param {HTMLElement} container
+ * @param {string} errorMessage
+ */
+function renderErrorState(container, errorMessage) {
+  container.innerHTML = `
+    <div class="card error-card">
+      <h2>Search Service Error</h2>
+      <p>${escapeHTML(errorMessage)}</p>
+      <a href="index.html" class="btn btn-primary" style="margin-top: 1rem;">Back to Search</a>
     </div>
   `;
 }
