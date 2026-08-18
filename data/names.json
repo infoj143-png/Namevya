@@ -1,0 +1,1002 @@
+[
+  {
+    "id": "1",
+    "name": "Muhammad",
+    "gender": "male",
+    "meaning": "Praiseworthy, praised one",
+    "origin": "Arabic",
+    "language": "Arabic",
+    "pronunciation": "moo-HAH-mad",
+    "alternativeSpellings": ["Mohammed", "Mohammad", "Muhammed"]
+  },
+  {
+    "id": "2",
+    "name": "Aisha",
+    "gender": "female",
+    "meaning": "Living, prosperous, full of life",
+    "origin": "Arabic",
+    "language": "Arabic",
+    "pronunciation": "EYE-shah",
+    "alternativeSpellings": ["Ayesha", "Aishah", "Ayisha"]
+  },
+  {
+    "id": "3",
+    "name": "Ali",
+    "gender": "male",
+    "meaning": "High, exalted, champion",
+    "origin": "Arabic",
+    "language": "Arabic",
+    "pronunciation": "AH-lee",
+    "alternativeSpellings": ["Aali", "Aly"]
+  },
+  {
+    "id": "4",
+    "name": "Fatima",
+    "gender": "female",
+    "meaning": "One who abstains, captivating",
+    "origin": "Arabic",
+    "language": "Arabic",
+    "pronunciation": "FAH-tee-mah",
+    "alternativeSpellings": ["Fatimah", "Fatema"]
+  },
+  {
+    "id": "5",
+    "name": "Omar",
+    "gender": "male",
+    "meaning": "Flourishing, long-lived, eloquent",
+    "origin": "Arabic",
+    "language": "Arabic",
+    "pronunciation": "OH-mar",
+    "alternativeSpellings": ["Umar", "Omer"]
+  },
+  {
+    "id": "6",
+    "name": "Zainab",
+    "gender": "female",
+    "meaning": "Fragrant flower, ornamental tree",
+    "origin": "Arabic",
+    "language": "Arabic",
+    "pronunciation": "ZAY-nab",
+    "alternativeSpellings": ["Zaynab", "Zeinab"]
+  },
+  {
+    "id": "7",
+    "name": "Hassan",
+    "gender": "male",
+    "meaning": "Handsome, good, benefactor",
+    "origin": "Arabic",
+    "language": "Arabic",
+    "pronunciation": "hah-SAHN",
+    "alternativeSpellings": ["Hasan", "Hassen"]
+  },
+  {
+    "id": "8",
+    "name": "Maryam",
+    "gender": "female",
+    "meaning": "Pious, beloved, sea of bitterness",
+    "origin": "Aramaic / Arabic",
+    "language": "Arabic",
+    "pronunciation": "MAR-yam",
+    "alternativeSpellings": ["Mariam", "Meryem"]
+  },
+  {
+    "id": "9",
+    "name": "Hussein",
+    "gender": "male",
+    "meaning": "Good, handsome, small beloved one",
+    "origin": "Arabic",
+    "language": "Arabic",
+    "pronunciation": "hoo-SAYN",
+    "alternativeSpellings": ["Hussain", "Husain"]
+  },
+  {
+    "id": "10",
+    "name": "Khadija",
+    "gender": "female",
+    "meaning": "Trustworthy, respected, early baby",
+    "origin": "Arabic",
+    "language": "Arabic",
+    "pronunciation": "kha-DEE-jah",
+    "alternativeSpellings": ["Khadijah", "Khadidja"]
+  },
+  {
+    "id": "11",
+    "name": "Bilal",
+    "gender": "male",
+    "meaning": "Moist, refreshing, water",
+    "origin": "Arabic",
+    "language": "Arabic",
+    "pronunciation": "bee-LAL",
+    "alternativeSpellings": ["Belaal"]
+  },
+  {
+    "id": "12",
+    "name": "Zara",
+    "gender": "female",
+    "meaning": "Blooming flower, radiance, princess",
+    "origin": "Arabic",
+    "language": "Arabic",
+    "pronunciation": "ZAH-rah",
+    "alternativeSpellings": ["Zahra", "Zahrah"]
+  },
+  {
+    "id": "13",
+    "name": "Hamza",
+    "gender": "male",
+    "meaning": "Steadfast, strong, lion",
+    "origin": "Arabic",
+    "language": "Arabic",
+    "pronunciation": "HAM-zah",
+    "alternativeSpellings": ["Hamzah"]
+  },
+  {
+    "id": "14",
+    "name": "Ananya",
+    "gender": "female",
+    "meaning": "Unique, matchless, peerless",
+    "origin": "Sanskrit",
+    "language": "Hindi / Sanskrit",
+    "pronunciation": "uh-NUN-yah",
+    "alternativeSpellings": ["Ananyaa"]
+  },
+  {
+    "id": "15",
+    "name": "Aarav",
+    "gender": "male",
+    "meaning": "Peaceful, wisdom, musical note",
+    "origin": "Sanskrit",
+    "language": "Hindi / Sanskrit",
+    "pronunciation": "AH-ruh-v",
+    "alternativeSpellings": ["Arav"]
+  },
+  {
+    "id": "16",
+    "name": "Sana",
+    "gender": "female",
+    "meaning": "Brilliance, splendor, praise",
+    "origin": "Arabic",
+    "language": "Arabic",
+    "pronunciation": "sah-NAH",
+    "alternativeSpellings": ["Sanaa"]
+  },
+  {
+    "id": "17",
+    "name": "Tariq",
+    "gender": "male",
+    "meaning": "Morning star, he who knocks at the door",
+    "origin": "Arabic",
+    "language": "Arabic",
+    "pronunciation": "TAH-rik",
+    "alternativeSpellings": ["Tareq", "Tarick"]
+  },
+  {
+    "id": "18",
+    "name": "Farida",
+    "gender": "female",
+    "meaning": "Unique, matchless, precious pearl",
+    "origin": "Arabic",
+    "language": "Arabic",
+    "pronunciation": "fah-REE-dah",
+    "alternativeSpellings": ["Fareeda", "Faridah"]
+  },
+  {
+    "id": "19",
+    "name": "Usman",
+    "gender": "male",
+    "meaning": "Wise, powerful, baby bustard bird",
+    "origin": "Arabic",
+    "language": "Arabic / Urdu",
+    "pronunciation": "OOS-maan",
+    "alternativeSpellings": ["Uthman", "Othman"]
+  },
+  {
+    "id": "20",
+    "name": "Noor",
+    "gender": "unisex",
+    "meaning": "Light, divine radiance",
+    "origin": "Arabic",
+    "language": "Arabic / Urdu",
+    "pronunciation": "NOOR",
+    "alternativeSpellings": ["Nour", "Nur"]
+  },
+  {
+    "id": "21",
+    "name": "Ibrahim",
+    "gender": "male",
+    "meaning": "Father of many nations",
+    "origin": "Hebrew / Arabic",
+    "language": "Arabic",
+    "pronunciation": "ib-rah-HEEM",
+    "alternativeSpellings": ["Ibraheem", "Ebrahim"]
+  },
+  {
+    "id": "22",
+    "name": "Amina",
+    "gender": "female",
+    "meaning": "Trustworthy, faithful, peaceful",
+    "origin": "Arabic",
+    "language": "Arabic",
+    "pronunciation": "ah-MEE-nah",
+    "alternativeSpellings": ["Aminah", "Ameena"]
+  },
+  {
+    "id": "23",
+    "name": "Zayd",
+    "gender": "male",
+    "meaning": "Abundance, growth, progress",
+    "origin": "Arabic",
+    "language": "Arabic",
+    "pronunciation": "ZAYD",
+    "alternativeSpellings": ["Zaid", "Zayed"]
+  },
+  {
+    "id": "24",
+    "name": "Hafsa",
+    "gender": "female",
+    "meaning": "Young lioness, gatherer",
+    "origin": "Arabic",
+    "language": "Arabic",
+    "pronunciation": "HAF-sah",
+    "alternativeSpellings": ["Hafsah"]
+  },
+  {
+    "id": "25",
+    "name": "Youssef",
+    "gender": "male",
+    "meaning": "God increases, God adds",
+    "origin": "Hebrew / Arabic",
+    "language": "Arabic",
+    "pronunciation": "YOO-sef",
+    "alternativeSpellings": ["Yousef", "Yusuf"]
+  },
+  {
+    "id": "26",
+    "name": "Ruqayya",
+    "gender": "female",
+    "meaning": "Gentle, rise, ascent, charming",
+    "origin": "Arabic",
+    "language": "Arabic",
+    "pronunciation": "roo-KAI-yah",
+    "alternativeSpellings": ["Ruqayyah", "Ruqaiya"]
+  },
+  {
+    "id": "27",
+    "name": "Khalid",
+    "gender": "male",
+    "meaning": "Eternal, immortal, everlasting",
+    "origin": "Arabic",
+    "language": "Arabic",
+    "pronunciation": "KHA-lid",
+    "alternativeSpellings": ["Khaled"]
+  },
+  {
+    "id": "28",
+    "name": "Layla",
+    "gender": "female",
+    "meaning": "Night, dark beauty",
+    "origin": "Arabic",
+    "language": "Arabic",
+    "pronunciation": "LAY-lah",
+    "alternativeSpellings": ["Laila", "Leila"]
+  },
+  {
+    "id": "29",
+    "name": "Rayyan",
+    "gender": "male",
+    "meaning": "Luxuriant, watered, door of Paradise",
+    "origin": "Arabic",
+    "language": "Arabic",
+    "pronunciation": "ray-YAHN",
+    "alternativeSpellings": ["Rayan"]
+  },
+  {
+    "id": "30",
+    "name": "Yasmin",
+    "gender": "female",
+    "meaning": "Jasmine flower",
+    "origin": "Persian / Arabic",
+    "language": "Persian / Arabic",
+    "pronunciation": "YAZ-min",
+    "alternativeSpellings": ["Yasmine", "Yasmeen"]
+  },
+  {
+    "id": "31",
+    "name": "Taha",
+    "gender": "male",
+    "meaning": "Pure, mystical letters in the Quran",
+    "origin": "Arabic",
+    "language": "Arabic",
+    "pronunciation": "TAH-hah",
+    "alternativeSpellings": ["Tahaa"]
+  },
+  {
+    "id": "32",
+    "name": "Sumayya",
+    "gender": "female",
+    "meaning": "High above, exalted, unique",
+    "origin": "Arabic",
+    "language": "Arabic",
+    "pronunciation": "soo-MAY-yah",
+    "alternativeSpellings": ["Sumaiyah", "Sumaiya"]
+  },
+  {
+    "id": "33",
+    "name": "Idris",
+    "gender": "male",
+    "meaning": "Studious, smart, interpreter",
+    "origin": "Welsh / Arabic",
+    "language": "Arabic",
+    "pronunciation": "ID-rees",
+    "alternativeSpellings": ["Idrees"]
+  },
+  {
+    "id": "34",
+    "name": "Safa",
+    "gender": "female",
+    "meaning": "Purity, clarity, serenity",
+    "origin": "Arabic",
+    "language": "Arabic",
+    "pronunciation": "SAH-fah",
+    "alternativeSpellings": ["Safaa"]
+  },
+  {
+    "id": "35",
+    "name": "Zubair",
+    "gender": "male",
+    "meaning": "Strong, powerful, wise",
+    "origin": "Arabic",
+    "language": "Arabic / Urdu",
+    "pronunciation": "zoo-BAYR",
+    "alternativeSpellings": ["Zubayr", "Zuber"]
+  },
+  {
+    "id": "36",
+    "name": "Mahnoor",
+    "gender": "female",
+    "meaning": "Moonlight, light of the moon",
+    "origin": "Persian / Arabic",
+    "language": "Urdu / Persian",
+    "pronunciation": "mah-NOOR",
+    "alternativeSpellings": ["Mahnur", "Mah-noor"]
+  },
+  {
+    "id": "37",
+    "name": "Shahzaib",
+    "gender": "male",
+    "meaning": "Crown of a king, majestic, handsome",
+    "origin": "Persian",
+    "language": "Urdu / Persian",
+    "pronunciation": "SHAH-zayb",
+    "alternativeSpellings": ["Shahzeb"]
+  },
+  {
+    "id": "38",
+    "name": "Anum",
+    "gender": "female",
+    "meaning": "Blessing of God, mercy",
+    "origin": "Arabic",
+    "language": "Urdu / Arabic",
+    "pronunciation": "A-num",
+    "alternativeSpellings": ["Anam"]
+  },
+  {
+    "id": "39",
+    "name": "Rohan",
+    "gender": "male",
+    "meaning": "Ascending, healing, sandalwood tree",
+    "origin": "Sanskrit",
+    "language": "Hindi / Sanskrit",
+    "pronunciation": "ROH-hun",
+    "alternativeSpellings": ["Rohen"]
+  },
+  {
+    "id": "40",
+    "name": "Inaya",
+    "gender": "female",
+    "meaning": "Help, care, protection, divine guidance",
+    "origin": "Arabic",
+    "language": "Arabic / Urdu",
+    "pronunciation": "ee-NAY-ah",
+    "alternativeSpellings": ["Inayah", "Enaya"]
+  },
+  {
+    "id": "41",
+    "name": "Bilqis",
+    "gender": "female",
+    "meaning": "Queen of Sheba",
+    "origin": "Arabic",
+    "language": "Arabic",
+    "pronunciation": "bil-KEES",
+    "alternativeSpellings": ["Bilkis", "Belkis"]
+  },
+  {
+    "id": "42",
+    "name": "Diya",
+    "gender": "female",
+    "meaning": "Light, lamp, splendor",
+    "origin": "Sanskrit / Arabic",
+    "language": "Hindi / Arabic",
+    "pronunciation": "DEE-yah",
+    "alternativeSpellings": ["Deea", "Diyaa"]
+  },
+  {
+    "id": "43",
+    "name": "Fahad",
+    "gender": "male",
+    "meaning": "Panther, leopard, fast warrior",
+    "origin": "Arabic",
+    "language": "Arabic / Urdu",
+    "pronunciation": "fah-HAD",
+    "alternativeSpellings": ["Fahed"]
+  },
+  {
+    "id": "44",
+    "name": "Hania",
+    "gender": "female",
+    "meaning": "Happy, delighted, pleasant",
+    "origin": "Arabic",
+    "language": "Arabic / Urdu",
+    "pronunciation": "HAH-nee-ah",
+    "alternativeSpellings": ["Haniyah", "Haniya"]
+  },
+  {
+    "id": "45",
+    "name": "Saad",
+    "gender": "male",
+    "meaning": "Felicity, prosperity, good luck",
+    "origin": "Arabic",
+    "language": "Arabic / Urdu",
+    "pronunciation": "SAHD",
+    "alternativeSpellings": ["Sa'd"]
+  },
+  {
+    "id": "46",
+    "name": "Minahil",
+    "gender": "female",
+    "meaning": "Fresh water spring, fountain",
+    "origin": "Arabic",
+    "language": "Urdu / Arabic",
+    "pronunciation": "mee-NAH-hil",
+    "alternativeSpellings": ["Manehal"]
+  },
+  {
+    "id": "47",
+    "name": "Faris",
+    "gender": "male",
+    "meaning": "Knight, horseman, perspicacious",
+    "origin": "Arabic",
+    "language": "Arabic",
+    "pronunciation": "FAH-ris",
+    "alternativeSpellings": ["Fares"]
+  },
+  {
+    "id": "48",
+    "name": "Zoya",
+    "gender": "female",
+    "meaning": "Alive, loving, caring",
+    "origin": "Persian / Russian",
+    "language": "Urdu / Russian",
+    "pronunciation": "ZOH-yah",
+    "alternativeSpellings": ["Zoe", "Zoyah"]
+  },
+  {
+    "id": "49",
+    "name": "Danish",
+    "gender": "male",
+    "meaning": "Knowledge, wisdom, learning",
+    "origin": "Persian",
+    "language": "Persian / Urdu",
+    "pronunciation": "DAA-nish",
+    "alternativeSpellings": ["Daanish"]
+  },
+  {
+    "id": "50",
+    "name": "Kinza",
+    "gender": "female",
+    "meaning": "Hidden treasure, prosperity",
+    "origin": "Arabic",
+    "language": "Urdu / Arabic",
+    "pronunciation": "KIN-zah",
+    "alternativeSpellings": ["Kanza"]
+  },
+  {
+    "id": "51",
+    "name": "Waqas",
+    "gender": "male",
+    "meaning": "Warrior, soldier, combative",
+    "origin": "Arabic",
+    "language": "Urdu / Arabic",
+    "pronunciation": "wah-KAAS",
+    "alternativeSpellings": ["Waqqas"]
+  },
+  {
+    "id": "52",
+    "name": "Sadia",
+    "gender": "female",
+    "meaning": "Blessed, successful, fortunate",
+    "origin": "Arabic",
+    "language": "Urdu / Arabic",
+    "pronunciation": "SAH-dee-ah",
+    "alternativeSpellings": ["Saadia", "Sadiya"]
+  },
+  {
+    "id": "53",
+    "name": "Kamran",
+    "gender": "male",
+    "meaning": "Successful, fortunate, prosperous",
+    "origin": "Persian",
+    "language": "Persian / Urdu",
+    "pronunciation": "KAHM-rahn",
+    "alternativeSpellings": ["Kamren"]
+  },
+  {
+    "id": "54",
+    "name": "Maha",
+    "gender": "female",
+    "meaning": "Gazelle with beautiful eyes, moon-like",
+    "origin": "Arabic",
+    "language": "Arabic / Urdu",
+    "pronunciation": "MAH-ha",
+    "alternativeSpellings": ["Mahah"]
+  },
+  {
+    "id": "55",
+    "name": "Farhan",
+    "gender": "male",
+    "meaning": "Happy, cheerful, joyful",
+    "origin": "Arabic",
+    "language": "Arabic / Urdu",
+    "pronunciation": "far-HAHN",
+    "alternativeSpellings": ["Farhaan"]
+  },
+  {
+    "id": "56",
+    "name": "Sidra",
+    "gender": "female",
+    "meaning": "Lote-tree of the utmost boundary",
+    "origin": "Arabic",
+    "language": "Arabic",
+    "pronunciation": "SID-rah",
+    "alternativeSpellings": ["Sidrah"]
+  },
+  {
+    "id": "57",
+    "name": "Shehryar",
+    "gender": "male",
+    "meaning": "Sovereign king, friend of the city",
+    "origin": "Persian",
+    "language": "Persian / Urdu",
+    "pronunciation": "sheh-ree-YAAR",
+    "alternativeSpellings": ["Shahryar", "Shehryaar"]
+  },
+  {
+    "id": "58",
+    "name": "Hira",
+    "gender": "female",
+    "meaning": "Darkness, cave of spiritual retreat",
+    "origin": "Arabic",
+    "language": "Urdu / Arabic",
+    "pronunciation": "HEE-rah",
+    "alternativeSpellings": ["Hera"]
+  },
+  {
+    "id": "59",
+    "name": "Adeel",
+    "gender": "male",
+    "meaning": "Just, fair, equitable",
+    "origin": "Arabic",
+    "language": "Urdu / Arabic",
+    "pronunciation": "ah-DEEL",
+    "alternativeSpellings": ["Adil"]
+  },
+  {
+    "id": "60",
+    "name": "Laiba",
+    "gender": "female",
+    "meaning": "Gorgeous, angel of heaven",
+    "origin": "Arabic",
+    "language": "Urdu / Arabic",
+    "pronunciation": "LAY-bah",
+    "alternativeSpellings": ["Leba"]
+  },
+  {
+    "id": "61",
+    "name": "Taimoor",
+    "gender": "male",
+    "meaning": "Iron, strong leader",
+    "origin": "Turkic / Mongolian",
+    "language": "Urdu / Persian",
+    "pronunciation": "tay-MOOR",
+    "alternativeSpellings": ["Timur", "Taimur"]
+  },
+  {
+    "id": "62",
+    "name": "Iqra",
+    "gender": "female",
+    "meaning": "Read, recite, study",
+    "origin": "Arabic",
+    "language": "Arabic / Urdu",
+    "pronunciation": "IK-rah",
+    "alternativeSpellings": ["Iqrah"]
+  },
+  {
+    "id": "63",
+    "name": "Adnan",
+    "gender": "male",
+    "meaning": "Settler, pioneer",
+    "origin": "Arabic",
+    "language": "Arabic",
+    "pronunciation": "ad-NAHN",
+    "alternativeSpellings": ["Adnaan"]
+  },
+  {
+    "id": "64",
+    "name": "Rimsha",
+    "gender": "female",
+    "meaning": "Bouquet of flowers, beautiful",
+    "origin": "Urdu / Persian",
+    "language": "Urdu",
+    "pronunciation": "RIM-shah",
+    "alternativeSpellings": ["Remsha"]
+  },
+  {
+    "id": "65",
+    "name": "Haris",
+    "gender": "male",
+    "meaning": "Guardian, cultivator, vigilant",
+    "origin": "Arabic",
+    "language": "Arabic / Urdu",
+    "pronunciation": "HAH-ris",
+    "alternativeSpellings": ["Hariss", "Harees"]
+  },
+  {
+    "id": "66",
+    "name": "Bushra",
+    "gender": "female",
+    "meaning": "Good news, glad tidings",
+    "origin": "Arabic",
+    "language": "Arabic / Urdu",
+    "pronunciation": "BUSH-rah",
+    "alternativeSpellings": ["Bouchra"]
+  },
+  {
+    "id": "67",
+    "name": "Faisal",
+    "gender": "male",
+    "meaning": "Decisive, arbiter, judge",
+    "origin": "Arabic",
+    "language": "Arabic / Urdu",
+    "pronunciation": "FAY-sal",
+    "alternativeSpellings": ["Faysal", "Faizal"]
+  },
+  {
+    "id": "68",
+    "name": "Areeba",
+    "gender": "female",
+    "meaning": "Wise, sensible, intelligent",
+    "origin": "Arabic",
+    "language": "Urdu / Arabic",
+    "pronunciation": "ah-REE-bah",
+    "alternativeSpellings": ["Ariba"]
+  },
+  {
+    "id": "69",
+    "name": "Mikail",
+    "gender": "male",
+    "meaning": "Who is like God, archangel Michael",
+    "origin": "Hebrew / Arabic",
+    "language": "Arabic",
+    "pronunciation": "mee-kah-EEL",
+    "alternativeSpellings": ["Mikael", "Mika'il"]
+  },
+  {
+    "id": "70",
+    "name": "Moin",
+    "gender": "male",
+    "meaning": "Helper, supporter, provider",
+    "origin": "Arabic",
+    "language": "Arabic / Urdu",
+    "pronunciation": "mo-EEN",
+    "alternativeSpellings": ["Moinuddin", "Moyeen"]
+  },
+  {
+    "id": "71",
+    "name": "Priya",
+    "gender": "female",
+    "meaning": "Beloved, dear, loved one",
+    "origin": "Sanskrit",
+    "language": "Hindi / Sanskrit",
+    "pronunciation": "PREE-yah",
+    "alternativeSpellings": ["Preeya"]
+  },
+  {
+    "id": "72",
+    "name": "Arjun",
+    "gender": "male",
+    "meaning": "Bright, shining, white, hero",
+    "origin": "Sanskrit",
+    "language": "Hindi / Sanskrit",
+    "pronunciation": "AR-joon",
+    "alternativeSpellings": ["Arjoona"]
+  },
+  {
+    "id": "73",
+    "name": "Kavya",
+    "gender": "female",
+    "meaning": "Poetry, poem, wise",
+    "origin": "Sanskrit",
+    "language": "Hindi / Sanskrit",
+    "pronunciation": "KAAV-yah",
+    "alternativeSpellings": ["Kaavya"]
+  },
+  {
+    "id": "74",
+    "name": "Reyansh",
+    "gender": "male",
+    "meaning": "First ray of sunlight, part of Lord Vishnu",
+    "origin": "Sanskrit",
+    "language": "Hindi / Sanskrit",
+    "pronunciation": "ray-YAHN-sh",
+    "alternativeSpellings": ["Riyansh"]
+  },
+  {
+    "id": "75",
+    "name": "Isha",
+    "gender": "female",
+    "meaning": "One who protects, ruler, goddess",
+    "origin": "Sanskrit",
+    "language": "Hindi / Sanskrit",
+    "pronunciation": "EE-shah",
+    "alternativeSpellings": ["Ishaa"]
+  },
+  {
+    "id": "76",
+    "name": "Vihaan",
+    "gender": "male",
+    "meaning": "Dawn, morning, start of a new era",
+    "origin": "Sanskrit",
+    "language": "Hindi / Sanskrit",
+    "pronunciation": "vee-HAHN",
+    "alternativeSpellings": ["Vihan"]
+  },
+  {
+    "id": "77",
+    "name": "Tara",
+    "gender": "female",
+    "meaning": "Star, pupil of the eye",
+    "origin": "Sanskrit",
+    "language": "Hindi / Sanskrit",
+    "pronunciation": "TAH-rah",
+    "alternativeSpellings": ["Tarrah"]
+  },
+  {
+    "id": "78",
+    "name": "Dev",
+    "gender": "male",
+    "meaning": "God, divine person, king",
+    "origin": "Sanskrit",
+    "language": "Hindi / Sanskrit",
+    "pronunciation": "DAY-v",
+    "alternativeSpellings": ["Dave"]
+  },
+  {
+    "id": "79",
+    "name": "Meera",
+    "gender": "female",
+    "meaning": "Prosperous, ocean, devotee of Krishna",
+    "origin": "Sanskrit",
+    "language": "Hindi / Sanskrit",
+    "pronunciation": "MEE-rah",
+    "alternativeSpellings": ["Mira"]
+  },
+  {
+    "id": "80",
+    "name": "Kabir",
+    "gender": "male",
+    "meaning": "Great, grand, famous saint",
+    "origin": "Arabic / Sanskrit",
+    "language": "Hindi / Urdu",
+    "pronunciation": "kuh-BEER",
+    "alternativeSpellings": ["Kabeer"]
+  },
+  {
+    "id": "81",
+    "name": "Siddharth",
+    "gender": "male",
+    "meaning": "One who has accomplished a goal",
+    "origin": "Sanskrit",
+    "language": "Hindi / Sanskrit",
+    "pronunciation": "sid-DHAR-th",
+    "alternativeSpellings": ["Siddharath", "Siddhart"]
+  },
+  {
+    "id": "82",
+    "name": "Rhea",
+    "gender": "female",
+    "meaning": "Flowing stream, graceful",
+    "origin": "Greek / Sanskrit",
+    "language": "Greek / Hindi",
+    "pronunciation": "REE-ah",
+    "alternativeSpellings": ["Riya"]
+  },
+  {
+    "id": "83",
+    "name": "Ahsan",
+    "gender": "male",
+    "meaning": "Perfection, excellence, kindness",
+    "origin": "Arabic",
+    "language": "Arabic / Urdu",
+    "pronunciation": "AH-san",
+    "alternativeSpellings": ["Ehsan"]
+  },
+  {
+    "id": "84",
+    "name": "Nayab",
+    "gender": "unisex",
+    "meaning": "Rare, precious, hard to find",
+    "origin": "Persian",
+    "language": "Urdu / Persian",
+    "pronunciation": "nah-YAAB",
+    "alternativeSpellings": ["Nayaab"]
+  },
+  {
+    "id": "85",
+    "name": "Adiba",
+    "gender": "female",
+    "meaning": "Cultured, polite, literary person",
+    "origin": "Arabic",
+    "language": "Arabic / Urdu",
+    "pronunciation": "ah-DEE-bah",
+    "alternativeSpellings": ["Adeeba"]
+  },
+  {
+    "id": "86",
+    "name": "Daniyal",
+    "gender": "male",
+    "meaning": "God is my judge, intelligent person",
+    "origin": "Hebrew / Arabic",
+    "language": "Arabic / Urdu",
+    "pronunciation": "dah-nee-YAAL",
+    "alternativeSpellings": ["Daniel", "Danial"]
+  },
+  {
+    "id": "87",
+    "name": "Suhana",
+    "gender": "female",
+    "meaning": "Charming, pleasant, beautiful",
+    "origin": "Arabic / Persian",
+    "language": "Urdu / Hindi",
+    "pronunciation": "soo-HAH-nah",
+    "alternativeSpellings": ["Sohana"]
+  },
+  {
+    "id": "88",
+    "name": "Razi",
+    "gender": "male",
+    "meaning": "Content, pleased, satisfied",
+    "origin": "Arabic",
+    "language": "Arabic / Urdu",
+    "pronunciation": "RAH-zee",
+    "alternativeSpellings": ["Raze"]
+  },
+  {
+    "id": "89",
+    "name": "Yumna",
+    "gender": "female",
+    "meaning": "Good fortune, blessed, right side",
+    "origin": "Arabic",
+    "language": "Arabic / Urdu",
+    "pronunciation": "YUM-nah",
+    "alternativeSpellings": ["Yoomna"]
+  },
+  {
+    "id": "90",
+    "name": "Nabeel",
+    "gender": "male",
+    "meaning": "Noble, honorable, generous",
+    "origin": "Arabic",
+    "language": "Arabic / Urdu",
+    "pronunciation": "nah-BEEL",
+    "alternativeSpellings": ["Nabil"]
+  },
+  {
+    "id": "91",
+    "name": "Samar",
+    "gender": "unisex",
+    "meaning": "Evening conversation, fruit of effort",
+    "origin": "Arabic",
+    "language": "Arabic / Urdu",
+    "pronunciation": "sah-MAR",
+    "alternativeSpellings": ["Sammer"]
+  },
+  {
+    "id": "92",
+    "name": "Eshal",
+    "gender": "female",
+    "meaning": "Flower of paradise, fragrant plant",
+    "origin": "Arabic",
+    "language": "Urdu / Arabic",
+    "pronunciation": "esh-HAAL",
+    "alternativeSpellings": ["Eshaal"]
+  },
+  {
+    "id": "93",
+    "name": "Noman",
+    "gender": "male",
+    "meaning": "Men with blessings of God",
+    "origin": "Arabic",
+    "language": "Arabic / Urdu",
+    "pronunciation": "no-MAAN",
+    "alternativeSpellings": ["Nouman", "Nauman"]
+  },
+  {
+    "id": "94",
+    "name": "Aliza",
+    "gender": "female",
+    "meaning": "Joyful, radiant, daughter of king",
+    "origin": "Hebrew / Arabic",
+    "language": "Urdu / Hebrew",
+    "pronunciation": "ah-LEE-zah",
+    "alternativeSpellings": ["Aleeza"]
+  },
+  {
+    "id": "95",
+    "name": "Azlan",
+    "gender": "male",
+    "meaning": "Lion, brave warrior",
+    "origin": "Turkic",
+    "language": "Urdu / Turkish",
+    "pronunciation": "AZ-lahn",
+    "alternativeSpellings": ["Aslan"]
+  },
+  {
+    "id": "96",
+    "name": "Zuhair",
+    "gender": "male",
+    "meaning": "Bright, shining, blooming flower",
+    "origin": "Arabic",
+    "language": "Arabic / Urdu",
+    "pronunciation": "zoo-HAYR",
+    "alternativeSpellings": ["Zuhayr", "Zoher"]
+  },
+  {
+    "id": "97",
+    "name": "Nailah",
+    "gender": "female",
+    "meaning": "Acquirer, attainer, winner",
+    "origin": "Arabic",
+    "language": "Arabic",
+    "pronunciation": "ny-EE-lah",
+    "alternativeSpellings": ["Naila"]
+  },
+  {
+    "id": "98",
+    "name": "Mustafa",
+    "gender": "male",
+    "meaning": "The chosen one, selected",
+    "origin": "Arabic",
+    "language": "Arabic / Urdu",
+    "pronunciation": "moos-TAH-fah",
+    "alternativeSpellings": ["Mostafa"]
+  },
+  {
+    "id": "99",
+    "name": "Syeda",
+    "gender": "female",
+    "meaning": "Noble lady, leader",
+    "origin": "Arabic",
+    "language": "Arabic / Urdu",
+    "pronunciation": "say-YEE-dah",
+    "alternativeSpellings": ["Sayyida", "Sayeeda"]
+  },
+  {
+    "id": "100",
+    "name": "Zeeshan",
+    "gender": "male",
+    "meaning": "Dignified, majestic, high status",
+    "origin": "Persian",
+    "language": "Urdu / Persian",
+    "pronunciation": "zee-SHAAN",
+    "alternativeSpellings": ["Zishan", "Zeshan"]
+  }
+]
