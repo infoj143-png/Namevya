@@ -45,40 +45,58 @@ Return a JSON object with the following schema:
 Set "isRealName" to false if "${cleanQuery}" is not a real name, gibberish, or invalid name.
 Return ONLY valid JSON matching this schema.`;
 
+  const MODEL_CANDIDATES = [
+    'gemini-3.1-flash-lite',
+    'gemini-2.5-flash',
+    'gemini-3.5-flash'
+  ];
+
   const controller = new AbortController();
   const timeoutId = setTimeout(() => controller.abort(), 10000);
 
   try {
-    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent?key=${apiKey}`;
-    const response = await fetch(url, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'x-goog-api-key': apiKey
-      },
-      signal: controller.signal,
-      body: JSON.stringify({
-        contents: [
-          {
-            parts: [{ text: prompt }]
+    let response = null;
+
+    for (const model of MODEL_CANDIDATES) {
+      const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
+      const resCandidate = await fetch(url, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'x-goog-api-key': apiKey
+        },
+        signal: controller.signal,
+        body: JSON.stringify({
+          contents: [
+            {
+              parts: [{ text: prompt }]
+            }
+          ],
+          generationConfig: {
+            temperature: 0.1,
+            responseMimeType: 'application/json'
           }
-        ],
-        generationConfig: {
-          temperature: 0.1,
-          responseMimeType: 'application/json'
-        }
-      })
-    });
+        })
+      });
 
-    clearTimeout(timeoutId);
+      if (resCandidate.ok) {
+        response = resCandidate;
+        break;
+      }
 
-    if (!response.ok) {
-      console.error(`Gemini API HTTP Error status: ${response.status}`);
-      if (response.status === 400 || response.status === 401 || response.status === 403) {
+      if (resCandidate.status === 404) {
+        console.warn(`Model ${model} unavailable (404), trying next fallback`);
+        continue;
+      }
+
+      console.error(`Gemini API HTTP Error status: ${resCandidate.status}`);
+      clearTimeout(timeoutId);
+
+      if (resCandidate.status === 400 || resCandidate.status === 401 || resCandidate.status === 403) {
         return res.status(500).json({
           error: "Search service authentication error or invalid API key configuration."
         });
-      } else if (response.status === 429) {
+      } else if (resCandidate.status === 429) {
         return res.status(429).json({
           error: "Search service rate limit exceeded. Please try again later."
         });
@@ -87,6 +105,14 @@ Return ONLY valid JSON matching this schema.`;
           error: "Search service is currently unavailable. Please try again later."
         });
       }
+    }
+
+    clearTimeout(timeoutId);
+
+    if (!response) {
+      return res.status(500).json({
+        error: "Search service is currently unavailable. Please try again later."
+      });
     }
 
     const data = await response.json();
