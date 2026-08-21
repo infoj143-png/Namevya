@@ -17,17 +17,22 @@ module.exports = async (req, res) => {
 
   const cleanQuery = query.trim();
 
-  const rawApiKey = process.env.GEMINI_API_KEY || process.env.NEXT_PUBLIC_GEMINI_API_KEY;
+  console.log("Checking API key environment variables on server:");
+  console.log(`process.env.GEMINIAPI_KEY: ${process.env.GEMINIAPI_KEY ? 'PRESENT' : 'UNDEFINED'}`);
+  console.log(`process.env.GEMINI_API_KEY: ${process.env.GEMINI_API_KEY ? 'PRESENT' : 'UNDEFINED'}`);
+  console.log(`process.env.NEXT_PUBLIC_GEMINI_API_KEY: ${process.env.NEXT_PUBLIC_GEMINI_API_KEY ? 'PRESENT' : 'UNDEFINED'}`);
+
+  const rawApiKey = process.env.GEMINIAPI_KEY || process.env.GEMINI_API_KEY || process.env.NEXT_PUBLIC_GEMINI_API_KEY;
   const apiKey = rawApiKey ? rawApiKey.trim() : null;
 
   if (!apiKey) {
-    console.error(`GEMINI_API_KEY check: process.env.GEMINI_API_KEY is ${process.env.GEMINI_API_KEY ? 'present' : 'undefined'}, NEXT_PUBLIC_GEMINI_API_KEY is ${process.env.NEXT_PUBLIC_GEMINI_API_KEY ? 'present' : 'undefined'}`);
+    console.error("No valid Gemini API key found in GEMINIAPI_KEY, GEMINI_API_KEY, or NEXT_PUBLIC_GEMINI_API_KEY.");
     return res.status(500).json({
-      error: "Search Service Error: GEMINI_API_KEY environment variable is not configured on the server."
+      error: "Search Service Error: GEMINIAPI_KEY environment variable is not configured on the server."
     });
   }
 
-  console.log("GEMINI_API_KEY successfully detected and configured.");
+  console.log("Gemini API key successfully detected and configured on server.");
 
   const prompt = `You are a name authority database assistant. Analyze the name "${cleanQuery}".
 Return a JSON object with the following schema:
