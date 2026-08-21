@@ -17,8 +17,9 @@ module.exports = async (req, res) => {
 
   const cleanQuery = query.trim();
 
-  const apiKey = process.env.GEMINI_API_KEY;
+  const apiKey = process.env.GEMINI_API_KEY || process.env.NEXT_PUBLIC_GEMINI_API_KEY;
   if (!apiKey) {
+    console.log("GEMINI_API_KEY status check: process.env.GEMINI_API_KEY is undefined");
     console.error("GEMINI_API_KEY environment variable is not configured.");
     return res.status(500).json({
       error: "Search Service Error: GEMINI_API_KEY environment variable is not configured on the server."
