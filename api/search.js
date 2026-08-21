@@ -17,12 +17,7 @@ module.exports = async (req, res) => {
 
   const cleanQuery = query.trim();
 
-  console.log("Checking API key environment variables on server:");
-  console.log(`process.env.GEMINIAPI_KEY: ${process.env.GEMINIAPI_KEY ? 'PRESENT' : 'UNDEFINED'}`);
-  console.log(`process.env.GEMINI_API_KEY: ${process.env.GEMINI_API_KEY ? 'PRESENT' : 'UNDEFINED'}`);
-  console.log(`process.env.NEXT_PUBLIC_GEMINI_API_KEY: ${process.env.NEXT_PUBLIC_GEMINI_API_KEY ? 'PRESENT' : 'UNDEFINED'}`);
-
-  const rawApiKey = process.env.GEMINIAPI_KEY || process.env.GEMINI_API_KEY || process.env.NEXT_PUBLIC_GEMINI_API_KEY;
+  const rawApiKey = process.env.GEMINI_API_KEY;
   const apiKey = rawApiKey ? rawApiKey.trim() : null;
 
   if (!apiKey) {
@@ -54,7 +49,7 @@ Return ONLY valid JSON matching this schema.`;
   const timeoutId = setTimeout(() => controller.abort(), 10000);
 
   try {
-    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
+    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent?key=${apiKey}`;
     const response = await fetch(url, {
       method: 'POST',
       headers: {
